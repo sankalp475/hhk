@@ -1,6 +1,14 @@
+* {
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
+
     box-sizing: border-box;
 }
 
@@ -90,9 +98,7 @@ header {
     padding: 0.5em 1em;
     /* z-index: 999; */
 }
-header>*{
-    z-index: 999;
-}
+
 
 .hamburger {
     width: 48px;
@@ -236,12 +242,27 @@ header>*{
 
 @media (min-width: 70em) {
     .cursor {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 1px solid black;
+        transition: all 200ms ease-out;
         position: fixed;
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-        background: rgb(255, 0, 0);
-        z-index: 999;
+        pointer-events: none;
+        left: 0;
+        top: 0;
+        transform: translate(calc(-50% + 15px), -50%);
+    }
+
+    .hover {
+        background-color: red;
+        opacity: 0.5;
+    }
+
+    .cursorinnerhover {
+        width: 50px;
+        height: 50px;
+        opacity: .5;
     }
 
     /* my changes  */
@@ -346,10 +367,10 @@ header>*{
     }
 
     div[dataManu-opened="true"] button.hindi--btn {
-       background-color: #000;
-       outline: 0;
-       border: 0;
-        --background-clr:#000;
+        background-color: #000;
+        outline: 0;
+        border: 0;
+        --background-clr: #000;
         color: #fff;
     }
 
@@ -362,6 +383,7 @@ header>*{
     #contact:hover {
         color: var(--clr-white-Text);
     }
+    /* done  */
 
 
     .right__nav {
