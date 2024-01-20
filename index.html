@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Raleway:wght@600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Hariyalikart</title>
+</head>
+
+<body>
+    <div class="cursor"></div>
+
+    <main class="main">
+        <video autoplay muted loop id="hero-video" src="/assets/istockphoto-1000602836-640_adpp_is.mp4"></video>
+
+        <section class="hero__section">
+            <header>
+                <a href="#">
+                    <img src="/assets/logo.svg" alt="" />
+                </a>
+
+                <ul class="center__nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+
+                <div class="right__nav" dataManu-opened="true">
+                    <section class="contact__form">
+                        <h2>Hey! Tell us all the things</h2>
+
+                        <form action="">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="text" id="name" placeholder="John Doe" required />
+
+                            <label for="email">Your Email</label>
+                            <input type="email" name="email" id="email" placeholder="john@example.com" required />
+
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" placeholder="Full Address" />
+                            <input type="text" id="address" placeholder="city" required />
+                            <input type="text" id="address" placeholder="Pin Code" required />
+
+                            <button type="submit" class="cta--btn">Contact Now</button>
+                        </form>
+                    </section>
+                    <button id="contact" class="cta--btn contact pf">
+                        Contact Us
+                    </button>
+                    <button class="hindi--btn pf">HIN</>
+                </div>
+
+                <button class="hamburger pf pr">
+                    <div class="bar"></div>
+                </button>
+
+                <nav class="nav">
+                    <div>Navigation</div>
+
+                    <ul>
+                        <li class="nav__list"><a class="nav__link" href="">Home</a></li>
+                        <li class="nav__list">
+                            <a class="nav__link" href="">Smart Solution</a>
+                        </li>
+                        <li class="nav__list">
+                            <a class="nav__link" href="">Products</a>
+                        </li>
+                        <li class="nav__list">
+                            <a class="nav__link" href="">Case Studies</a>
+                        </li>
+                        <li class="nav__list">
+                            <a class="nav__link" href="">About Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="hero__title">
+                <div class="hero--text">
+                    <h1>Welcome to Hariyalikart!</h1>
+                    <p>Where agriculture meets innovation &#128161;</p>
+                </div>
+
+                <a href="#services">
+                    <img src="/assets/arrow.svg" class="svg" alt="" />
+                </a>
+            </div>
+        </section>
+
+        <section id="services" class="container our__services">
+            <h2>Services We Provide</h2>
+            <p>
+                We provide personalized financial advice and guidance to clients
+                through a variety of online channels. They can help clients with a
+                wide range of financial tasks
+            </p>
+
+            <div class="services__card">
+                <div class="cards">
+                    <img src="" alt="" />
+                    <p></p>
+                </div>
+                <div class="cards">
+                    <img src="" alt="" />
+                    <p></p>
+                </div>
+                <div class="cards">
+                    <img src="" alt="" />
+                    <p></p>
+                </div>
+                <div class="cards">
+                    <img src="" alt="" />
+                    <p></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
